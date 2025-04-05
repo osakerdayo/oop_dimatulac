@@ -6,7 +6,6 @@ class Vehicle:
     def display_info(self):
         print(f"Vehicle: {self.brand} {self.model}")
 
-
 class SchoolBus(Vehicle):
     def __init__(self, brand, model, capacity):
         super().__init__(brand, model)
@@ -16,8 +15,6 @@ class SchoolBus(Vehicle):
         super().display_info()
         print(f"Capacity: {self.capacity} students")
 
-
-# Task 2: Employee Class with Multiple Constructors
 class Employee:
     def __init__(self, name, salary):
         self.name = name
@@ -35,8 +32,6 @@ class Employee:
     def display(self):
         print(f"Employee Name: {self.name}, Salary: ${self.salary}")
 
-
-# Task 3: Two Schools with GPA
 class SchoolOne:
     def __init__(self, students):
         self.students = students
@@ -49,7 +44,6 @@ class SchoolOne:
         for name, grade in self.students.items():
             print(f"{name}: {grade}")
         print("Average GPA:", self.average_gpa())
-
 
 class SchoolTwo:
     def __init__(self, students):
@@ -64,8 +58,6 @@ class SchoolTwo:
             print(f"{name}: {grade}")
         print("Average GPA:", self.average_gpa())
 
-
-# Task 4: Vector Class with Operator Overloading
 class Vector:
     def __init__(self, x, y):
         self.x = x
@@ -77,8 +69,6 @@ class Vector:
     def __str__(self):
         return f"Vector({self.x}, {self.y})"
 
-
-# Task 5: Composition Over Inheritance
 class Author:
     def __init__(self, name, nationality):
         self.name = name
@@ -86,7 +76,6 @@ class Author:
 
     def display(self):
         print(f"Author: {self.name}, Nationality: {self.nationality}")
-
 
 class Book:
     def __init__(self, title, author: Author):
@@ -96,7 +85,6 @@ class Book:
     def display(self):
         print(f"Book: {self.title}")
         self.author.display()
-
 
 if __name__ == "__main__":
     print("--- Vehicle and SchoolBus ---")
